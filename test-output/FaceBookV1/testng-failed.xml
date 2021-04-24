@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FaceBookV1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FaceBookapp(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.FaceBook.Testcases.TC_LoginPage_001">
+        <methods>
+          <include name="Logintest"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.FaceBook.Testcases.TC_LoginPage_001 -->
+    </classes>
+  </test> <!-- FaceBookapp(failed) -->
+</suite> <!-- Failed suite [FaceBookV1] -->
