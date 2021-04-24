@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-FaceBookV1" class="navigator-link">
-              <span class="suite-name border-skipped">FaceBookV1</span>
+              <span class="suite-name border-failed">FaceBookV1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-FaceBookV1" class="hide-methods skipped suite-FaceBookV1"> (hide)</a> <!-- hide-methods skipped suite-FaceBookV1 -->
-                      <a href="#" panel-name="suite-FaceBookV1" class="show-methods skipped suite-FaceBookV1"> (show)</a> <!-- show-methods skipped suite-FaceBookV1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FaceBookV1" class="hide-methods failed suite-FaceBookV1"> (hide)</a> <!-- hide-methods failed suite-FaceBookV1 -->
+                      <a href="#" panel-name="suite-FaceBookV1" class="show-methods failed suite-FaceBookV1"> (show)</a> <!-- show-methods failed suite-FaceBookV1 -->
                     </span>
-                    <div class="method-list-content skipped suite-FaceBookV1">
+                    <div class="method-list-content failed suite-FaceBookV1">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-FaceBookV1" title="com.FaceBook.Testcases.TC_LoginPage_001" class="method navigator-link" hash-for-method="Logintest">Logintest</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FaceBookV1" title="com.FaceBook.Testcases.TC_CreateNewAccount_002" class="method navigator-link" hash-for-method="CreateAccount">CreateAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-FaceBookV1 -->
+                    </div> <!-- method-list-content failed suite-FaceBookV1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,50 +119,48 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-FaceBookV1" class="panel FaceBookV1">
-          <div class="suite-FaceBookV1-class-skipped">
+          <div class="suite-FaceBookV1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.FaceBook.Testcases.TC_LoginPage_001</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.FaceBook.Testcases.TC_CreateNewAccount_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Logintest">
-                  </a> <!-- Logintest -->
-                  <span class="method-name">Logintest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: No connection could be made because the target machine actively refused it. (os error 10061)
+                  <a name="CreateAccount">
+                  </a> <!-- CreateAccount -->
+                  <span class="method-name">CreateAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot; //input[@id =&apos;u_0_v_/S&apos;]&quot;}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;BHAGYAREKHA&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10c98fa74d7caa7a9a518bd7ae1b78af
+*** Element info: {Using=xpath, value= //input[@id =&apos;u_0_v_/S&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at com.FaceBook.Testcases.BaseClass.SetUp(BaseClass.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at com.FaceBook.pageObjects.CreateNewAccount.SetReEnterEmail(CreateNewAccount.java:101)
+	at com.FaceBook.Testcases.TC_CreateNewAccount_002.CreateAccount(TC_CreateNewAccount_002.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FaceBookV1-class-skipped -->
+          </div> <!-- suite-FaceBookV1-class-failed -->
         </div> <!-- panel FaceBookV1 -->
         <div panel-name="test-xml-FaceBookV1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -174,9 +172,9 @@ remote stacktrace:
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;FaceBookV1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;FaceBookapp&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.FaceBook.Testcases.TC_LoginPage_001&quot;/&gt;
+      &lt;class name=&quot;com.FaceBook.Testcases.TC_CreateNewAccount_002&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FaceBookapp --&gt;
 &lt;/suite&gt; &lt;!-- FaceBookV1 --&gt;
@@ -218,14 +216,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Logintest')
-data.setCell(0, 2, 'com.FaceBook.Testcases.TC_LoginPage_001')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'CreateAccount')
+data.setCell(0, 2, 'com.FaceBook.Testcases.TC_CreateNewAccount_002')
+data.setCell(0, 3, 18584);
 window.suiteTableData['FaceBookV1']= { tableData: data, tableDiv: 'times-div-FaceBookV1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-FaceBookV1">
               </div> <!-- times-div-FaceBookV1 -->
             </div> <!-- times-div -->
@@ -251,16 +249,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.FaceBook.Testcases.TC_LoginPage_001</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.FaceBook.Testcases.TC_CreateNewAccount_002</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SetUp(firefox)</span>
+                <span class="method-name">SetUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Logintest</span>
-                <span class="method-start">64126 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateAccount</span>
+                <span class="method-start">3700 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

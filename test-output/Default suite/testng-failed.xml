@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.FaceBook.Testcases.TC_Hompagelogin_003">
+      <class name="com.FaceBook.Testcases.TC_CreateNewAccount_002">
         <methods>
-          <include name="Loginpage"/>
           <include name="SetUp"/>
+          <include name="CreateAccount"/>
         </methods>
-      </class> <!-- com.FaceBook.Testcases.TC_Hompagelogin_003 -->
+      </class> <!-- com.FaceBook.Testcases.TC_CreateNewAccount_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

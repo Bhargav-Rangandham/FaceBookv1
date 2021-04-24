@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [FaceBookV1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="FaceBookapp(failed)">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.FaceBook.Testcases.TC_LoginPage_001">
+      <class name="com.FaceBook.Testcases.TC_CreateNewAccount_002">
         <methods>
-          <include name="Logintest"/>
           <include name="SetUp"/>
+          <include name="CreateAccount"/>
         </methods>
-      </class> <!-- com.FaceBook.Testcases.TC_LoginPage_001 -->
+      </class> <!-- com.FaceBook.Testcases.TC_CreateNewAccount_002 -->
     </classes>
   </test> <!-- FaceBookapp(failed) -->
 </suite> <!-- Failed suite [FaceBookV1] -->

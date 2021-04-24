@@ -28,6 +28,13 @@ public class ReadConfig {
 		return url;
 
 	}
+	
+
+	public String getAccountCreateUrl() {
+		String acnturl = prop.getProperty("createacnturl");
+		return acnturl;
+
+	}
 
 	public String getUserName() {
 		String UserName = prop.getProperty("username");
@@ -53,13 +60,7 @@ public class ReadConfig {
 		return FirefoxPath;
 
 	}
-	/*
 	
-	public String getPassword() {
-		String Password = prop.getProperty("Password");
-		return Password;
-
-	}*/
 
 
 

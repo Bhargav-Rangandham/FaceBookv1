@@ -11,16 +11,18 @@ import com.FaceBook.pageObjects.LoginPage;
 public class TC_LoginPage_001 extends BaseClass{
 
 	@Test(priority = 0)
-	public void Logintest() throws IOException {
+	public void Logintest() throws Exception {
 
-		driver.get(baseUrl);
-
+		driver.get(baseurl);
+		
+		Thread.sleep(5000);
+		
 		//Logger.info("Page Opened");
 
 		LoginPage login = new LoginPage(driver);
 
-		login.SetUserName(UserName);
-		login.SetPassword(Password);
+		login.SetUserName(username);
+		login.SetPassword(password);
 
 		login.LoginButton();
 

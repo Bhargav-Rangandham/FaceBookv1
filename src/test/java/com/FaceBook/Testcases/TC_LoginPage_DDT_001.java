@@ -12,13 +12,13 @@ public class TC_LoginPage_DDT_001 extends BaseClass {
 	@Test
 	public void LogintestDDT() throws IOException {
 		
-		driver.get(baseUrl);
+		driver.get(baseurl);
 		
 		LoginPage lp = new LoginPage(driver);
 		
 		
-		String usrn = ExcelUtils.getCellData(UserName, Password, 1, 0);
-		String pswrd = ExcelUtils.getCellData(UserName, Password, 1, 1);
+		String usrn = ExcelUtils.getCellData(username, password, 1, 0);
+		String pswrd = ExcelUtils.getCellData(username, password, 1, 1);
 		lp.SetUserName(usrn);
 		lp.SetPassword(pswrd);
 		
