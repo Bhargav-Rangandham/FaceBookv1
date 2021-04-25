@@ -34,7 +34,7 @@ public class CreateNewAccount {
 	@CacheLookup
 	WebElement txtRegisterEmail; 
 
-	@FindBy(xpath = " //input[@id ='u_0_v_/S']")
+	@FindBy(xpath = "//input[@name = 'reg_email_confirmation__']")
 	@CacheLookup
 	WebElement txtReenterEmail; 
 
@@ -46,7 +46,6 @@ public class CreateNewAccount {
 	@CacheLookup
 	WebElement txtSetDOB; //Date of Birth
 
-
 	@FindBy(xpath = "//select[@id='month']")
 	@CacheLookup
 	WebElement txtSetMOB; //Date of Moth
@@ -55,18 +54,19 @@ public class CreateNewAccount {
 	@CacheLookup
 	WebElement txtSetYOB; // Month of year
 
-	@FindBy(xpath = "//input[@name='sex' and @id = 'u_c_3_uf' ]")
-	@CacheLookup
-	WebElement btnGenderMale; //
-
-
-	@FindBy(xpath = "//input[@name='sex' and @id = 'u_c_2_xw' ]")
+	@FindBy(xpath = "//input[@class= '_8esa'][1]")
 	@CacheLookup
 	WebElement btnGenderFemale; //
-
-	@FindBy(xpath = "//input[@name='sex' and @id = 'u_c_4_lL']")
+	
+	@FindBy(xpath = "//input[@id= 'u_0_5_+B']")
 	@CacheLookup
-	WebElement btnGenderCustom; // 
+	WebElement btnGenderMale;
+
+	@FindBy(xpath = "//input[@id= 'u_0_6_Ux']")
+	@CacheLookup
+	WebElement btnGenderCustom; //
+	
+	//input[@name= 'custom_gender']
 
 
 	@FindBy(xpath = "//button[@name='websubmit']")
@@ -140,7 +140,7 @@ public class CreateNewAccount {
 
 
 	public void btnCreateLink() {
-		btnCreatenewAccount.submit();
+		btnCreatenewAccount.click();
 	}
 
 

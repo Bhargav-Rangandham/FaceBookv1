@@ -1,7 +1,6 @@
 package com.FaceBook.Testcases;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 
 import com.FaceBook.pageObjects.CreateNewAccount;
@@ -9,16 +8,11 @@ import com.FaceBook.pageObjects.CreateNewAccount;
 public class TC_CreateNewAccount_002 extends BaseClass {
 	
 	@Test
-	public void CreateAccount() {
+	public void CreateAccount() throws Exception  {
 		
 				driver.get(createacnturl);
 		
 		CreateNewAccount createacnt = new CreateNewAccount(driver);
-		
-		/*createacnt.CreateAccountLink();
-		
-		WebElement acntframe = driver.findElement(By.xpath("//*[@id=\"facebook\"]/body/iframe"));
-		driver.switchTo().frame(acntframe); */
 		
 		createacnt.SetFirstname("CheckUp");
 		
@@ -30,17 +24,21 @@ public class TC_CreateNewAccount_002 extends BaseClass {
 		
 		createacnt.SetNewPassword("checkup@2369");
 		
-		createacnt.SetDate("05");
+		createacnt.SetDate("07");
 		
-		createacnt.SetMonth("Apr");
+		createacnt.SetMonth("May");
 		
 		createacnt.SetYear("1999");
 		
-		createacnt.SetGenderMale();
-		
+		createacnt.SetGenderFemale();
+				
 		createacnt.btnCreateLink();
 		
+		takeScreenshot(driver, "CreateAccount");
 		
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	
+		driver.close();
 	}
 	
 	

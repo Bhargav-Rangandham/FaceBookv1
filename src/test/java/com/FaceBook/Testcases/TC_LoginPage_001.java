@@ -1,7 +1,5 @@
 package com.FaceBook.Testcases;
 
-import java.io.IOException;
-
 import java.util.concurrent.TimeUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,7 +9,7 @@ import com.FaceBook.pageObjects.LoginPage;
 public class TC_LoginPage_001 extends BaseClass{
 
 	@Test(priority = 0)
-	public void Logintest() throws Exception {
+	public void LoginTest() throws Exception {
 
 		driver.get(baseurl);
 		
@@ -28,41 +26,28 @@ public class TC_LoginPage_001 extends BaseClass{
 
 		System.out.println(driver.getTitle());
 		
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
-
-		/*if(IsalertPresent() == true) {
-			driver.switchTo().alert().accept();
-			driver.switchTo().defaultContent();
-			Assert.assertTrue(false);	
-			
-			}
-			else {
-				
-			Assert.assertTrue(true);
-				
-			} */
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 
-	/*	 if(driver.getTitle().equals("Facebook – log in or sign up")) {
+		
+		/*
+		if(driver.getTitle().equals("Facebook – log in or sign up")) {
 
 			Assert.assertTrue(true);
-			System.out.println(" Test Case Passed");
-			takeScreenshot(driver,"Logintest");
+			System.out.println("Test Case Passed");
+			//takeScreenshot(driver,"Logintest");
 
 		}
 		else {
 			Assert.assertTrue(false);
 			System.out.println("Test Case Failed");
-
-
-			takeScreenshot(driver,"Logintest");
+			takeScreenshot(driver,"LoginTest");
 		}
 	}
-*/
-	
+	*/
 	
 	/*@Test(priority = 0)
-	public void Logouttest() {
+	public void LogoutTest() {
 
 		driver.get(BaseUrl);
 
@@ -71,8 +56,9 @@ public class TC_LoginPage_001 extends BaseClass{
 		logout.ClickProfile();
 		logout.ClickLogout();
 
-
 }*/
-	}
+
 }
+}
+
 

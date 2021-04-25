@@ -4,12 +4,12 @@
   <test thread-count="5" name="FaceBookapp(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.FaceBook.Testcases.TC_CreateNewAccount_002">
+      <class name="com.FaceBook.Testcases.TC_LoginPage_001">
         <methods>
+          <include name="LoginTest"/>
           <include name="SetUp"/>
-          <include name="CreateAccount"/>
         </methods>
-      </class> <!-- com.FaceBook.Testcases.TC_CreateNewAccount_002 -->
+      </class> <!-- com.FaceBook.Testcases.TC_LoginPage_001 -->
     </classes>
   </test> <!-- FaceBookapp(failed) -->
 </suite> <!-- Failed suite [FaceBookV1] -->

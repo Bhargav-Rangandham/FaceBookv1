@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-24T18:24:42 IST" name="FaceBookV1" finished-at="2021-04-24T18:25:04 IST" duration-ms="22348">
+  <suite started-at="2021-04-25T11:26:00 IST" name="FaceBookV1" finished-at="2021-04-25T11:26:17 IST" duration-ms="17075">
     <groups>
     </groups>
-    <test started-at="2021-04-24T18:24:42 IST" name="FaceBookapp" finished-at="2021-04-24T18:25:04 IST" duration-ms="22348">
-      <class name="com.FaceBook.Testcases.TC_CreateNewAccount_002">
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.FaceBook.Testcases.TC_CreateNewAccount_002@1613674b]" started-at="2021-04-24T18:24:42 IST" name="SetUp" finished-at="2021-04-24T18:24:45 IST" duration-ms="3668" status="PASS">
+    <test started-at="2021-04-25T11:26:00 IST" name="FaceBookapp" finished-at="2021-04-25T11:26:17 IST" duration-ms="17075">
+      <class name="com.FaceBook.Testcases.TC_LoginPage_001">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:com.FaceBook.Testcases.TC_LoginPage_001@27ff5d15]" started-at="2021-04-25T11:26:00 IST" name="SetUp" finished-at="2021-04-25T11:26:04 IST" duration-ms="3402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,49 +18,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="CreateAccount()[pri:0, instance:com.FaceBook.Testcases.TC_CreateNewAccount_002@1613674b]" started-at="2021-04-24T18:24:45 IST" name="CreateAccount" finished-at="2021-04-24T18:25:04 IST" duration-ms="18584" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="LoginTest()[pri:0, instance:com.FaceBook.Testcases.TC_LoginPage_001@27ff5d15]" started-at="2021-04-25T11:26:04 IST" name="LoginTest" finished-at="2021-04-25T11:26:17 IST" duration-ms="13570" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":" //input[@id ='u_0_v_/S']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHAGYAREKHA', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 10c98fa74d7caa7a9a518bd7ae1b78af
-*** Element info: {Using=xpath, value= //input[@id ='u_0_v_/S']}]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":" //input[@id ='u_0_v_/S']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHAGYAREKHA', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 10c98fa74d7caa7a9a518bd7ae1b78af
-*** Element info: {Using=xpath, value= //input[@id ='u_0_v_/S']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-at com.FaceBook.pageObjects.CreateNewAccount.SetReEnterEmail(CreateNewAccount.java:101)
-at com.FaceBook.Testcases.TC_CreateNewAccount_002.CreateAccount(TC_CreateNewAccount_002.java:29)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.FaceBook.Testcases.TC_LoginPage_001.LoginTest(TC_LoginPage_001.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,11 +60,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateAccount -->
-      </class> <!-- com.FaceBook.Testcases.TC_CreateNewAccount_002 -->
+        </test-method> <!-- LoginTest -->
+      </class> <!-- com.FaceBook.Testcases.TC_LoginPage_001 -->
     </test> <!-- FaceBookapp -->
   </suite> <!-- FaceBookV1 -->
 </testng-results>
