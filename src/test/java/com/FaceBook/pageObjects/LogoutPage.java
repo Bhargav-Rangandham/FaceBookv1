@@ -16,18 +16,18 @@ public class LogoutPage {
 		PageFactory.initElements(rDriver, this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"mount_0_0_SO\"]/div/div[1]/div/div[2]/div[4]/div[1]/span/div/div[1]/img")
+	@FindBy(xpath = "//img[@class = 's45kfl79 emlxlaya bkmhp75w spb7xbtv']")
 	@CacheLookup
 	WebElement ProfileClick;
 	
-	@FindBy(xpath ="//*[@id=\"mount_0_0_zP\"]/div/div[1]/div/div[2]/div[4]/div[2]/div/div[2]/div[1]/div/div[1]/div/div/div/div/div[3]/div/div/div/div/div/div/div[1]/div/div[3]/div/div[4]/div/div[1]/div[2]/div/div/div")
+	@FindBy(xpath ="//span[@class = 'd-8edcug0 hpfvmrgz qv66sw1b c1et5uql lr9zc1uh a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d3f4x2em fe6kdd0r mau55g9w c8b282yb iv3no6db jq4qci2q a3bd9o3v ekzkrbhg oo9gr5id hzawbc8m']")
 	@CacheLookup
 	WebElement txtLogoutbtn;
 
 	
 	public void ClickProfile() {
 
-		ProfileClick.sendKeys();
+		ProfileClick.click();
 	}
 
 

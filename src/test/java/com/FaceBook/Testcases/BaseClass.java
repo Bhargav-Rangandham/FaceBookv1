@@ -12,11 +12,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.io.FileHandler;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
 import com.FaceBook.utilities.ReadConfig;
+
 
 public class BaseClass {
 
@@ -45,8 +44,14 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
 			//Another way of setting properties
 			//System.setProperty("WebDriver.chrome.driver", System.setPropety("user.dir)+"Drivers/chromedriver.exe");
+
 			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("--disable-notifcations");
+			opt.addArguments("chrome.switches","--disable-notifications --disable-extensions --disable-extensions-file-access-check --disable-extensions-http-throttling --disable-infobars --enable-automation --start-maximized");
+			opt.setExperimentalOption("excludeSwitches",new String[] {"enable-automation"});
+
+			//opt.addUserProfilePreference("credentials_enable_service", false);
+			// opt.addUserProfilePreference("profile.password_manager_enabled", false);
+
 			driver = new ChromeDriver(opt);
 			driver.manage().window().maximize();
 		}
@@ -64,13 +69,13 @@ public class BaseClass {
 
 	}
 
-	/*@AfterClass
-		public void tearDown() {
+		/*@AfterClass
+			public void tearDown() {
 
 			driver.quit();
-		}*/
+			}*/
 
-	/*public boolean IsalertPresent () {
+		/*public boolean IsalertPresent () {
 
 			try {
 
@@ -97,7 +102,6 @@ public class BaseClass {
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + timestamp()+".png");
 		FileHandler.copy(src, dest);
-
 
 	}
 
