@@ -50,7 +50,7 @@ public class BaseClass {
 			opt.setExperimentalOption("excludeSwitches",new String[] {"enable-automation"});
 
 			//opt.addUserProfilePreference("credentials_enable_service", false);
-			// opt.addUserProfilePreference("profile.password_manager_enabled", false);
+			//opt.addUserProfilePreference("profile.password_manager_enabled", false);
 
 			driver = new ChromeDriver(opt);
 			driver.manage().window().maximize();
