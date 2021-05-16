@@ -23,7 +23,7 @@ public class SendMessage {
 	WebElement txtContacts;
 		
 	
-	@FindBy(xpath = "//div[text() = 'Aa']")
+	@FindBy(xpath = "//div[@class='_1mf _1mj'  and @data-offset-key = 'bhdir-0-0']")   //div[text() = 'Aa']
 	@CacheLookup
 	WebElement txtMsg;
 	

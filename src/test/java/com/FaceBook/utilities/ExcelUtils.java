@@ -17,6 +17,11 @@ public class ExcelUtils {
 	public static XSSFSheet sheet;
 	public static XSSFRow row;
 	public static XSSFCell cell;
+	String path = null;
+	
+	public ExcelUtils(String path){
+		this.path = path;
+	}
 	
 	
 	
@@ -74,7 +79,7 @@ public class ExcelUtils {
 	
 	}
 	
-	public static void settCellData(String xlFile, String xlsheet, int rownum, int column, String data) throws IOException {
+	public static void setCellData(String xlFile, String xlsheet, int rownum, int column, String data) throws IOException {
 		
 		fis = new FileInputStream(xlFile);
 		wb = new XSSFWorkbook(fis);
