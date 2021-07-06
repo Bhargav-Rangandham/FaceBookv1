@@ -16,6 +16,7 @@ public class LoginPage {
 		PageFactory.initElements(rDriver, this);
 	}
 
+	
 	@FindBy(name = "email")
 	@CacheLookup
 	WebElement txtEmail;
@@ -29,9 +30,6 @@ public class LoginPage {
 	WebElement txtbtnLogin;
 
 	
-
-
-
 	public void SetUserName(String uname) {
 
 		txtEmail.sendKeys(uname);

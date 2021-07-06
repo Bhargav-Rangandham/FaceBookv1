@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-FaceBookV1">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-FaceBookV1" title="com.FaceBook.Testcases.TC_LoginPage_DDT_001" class="method navigator-link" hash-for-method="LoginTestDDT">LoginTestDDT</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-FaceBookV1" title="com.FaceBook.Testcases.TC_LoginPage_001" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-FaceBookV1 -->
@@ -122,18 +122,40 @@
           <div class="suite-FaceBookV1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.FaceBook.Testcases.TC_LoginPage_DDT_001</span>
+              <span class="class-name">com.FaceBook.Testcases.TC_LoginPage_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTestDDT">
-                  </a> <!-- LoginTestDDT -->
-                  <span class="method-name">LoginTestDDT</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Method public void com.FaceBook.Testcases.TC_LoginPage_DDT_001.LoginTestDDT(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : LogintestDDT
+                  <a name="LoginTest">
+                  </a> <!-- LoginTest -->
+                  <span class="method-name">LoginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@class = &apos;s45kfl79 emlxlaya bkmhp75w spb7xbtv&apos;]&quot;}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BHAGYAREKHA&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a92c65641a4f18942126cc30f909fe26
+*** Element info: {Using=xpath, value=//img[@class = &apos;s45kfl79 emlxlaya bkmhp75w spb7xbtv&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.FaceBook.pageObjects.LogoutPage.ClickProfile(LogoutPage.java:30)
+	at com.FaceBook.Testcases.TC_LoginPage_001.LoginTest(TC_LoginPage_001.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 24 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -152,7 +174,7 @@ Method public void com.FaceBook.Testcases.TC_LoginPage_DDT_001.LoginTestDDT(java
   &lt;test thread-count=&quot;5&quot; name=&quot;FaceBookapp&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.FaceBook.Testcases.TC_LoginPage_DDT_001&quot;/&gt;
+      &lt;class name=&quot;com.FaceBook.Testcases.TC_LoginPage_001&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FaceBookapp --&gt;
 &lt;/suite&gt; &lt;!-- FaceBookV1 --&gt;
@@ -194,14 +216,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginTestDDT')
-data.setCell(0, 2, 'com.FaceBook.Testcases.TC_LoginPage_DDT_001')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'LoginTest')
+data.setCell(0, 2, 'com.FaceBook.Testcases.TC_LoginPage_001')
+data.setCell(0, 3, 17871);
 window.suiteTableData['FaceBookV1']= { tableData: data, tableDiv: 'times-div-FaceBookV1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-FaceBookV1">
               </div> <!-- times-div-FaceBookV1 -->
             </div> <!-- times-div -->
@@ -227,11 +249,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.FaceBook.Testcases.TC_LoginPage_DDT_001</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.FaceBook.Testcases.TC_LoginPage_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">SetUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest</span>
+                <span class="method-start">8274 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
