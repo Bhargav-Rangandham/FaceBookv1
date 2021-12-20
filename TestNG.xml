@@ -5,10 +5,9 @@
 <suite name = "FaceBookV1">
 	
 	<test name = "FaceBookapp">
-	<parameter name = "browser" value = "chrome"/>
-	
+	<parameter name = "browser" value = "edge"/>
 	<classes>
-	  <!--  <class name = "com.FaceBook.Testcases.TC_LoginPage_DDT_001"></class>  -->
+	 <!--  <class name = "com.FaceBook.Testcases.TC_LoginPage_DDT_001"></class>  -->
 	  	   
 	 <class name = "com.FaceBook.Testcases.TC_LoginPage_001"></class>  
 	 
@@ -18,7 +17,6 @@
 	
 	</classes>
 	
-	
 	</test>
-
+	
 </suite>

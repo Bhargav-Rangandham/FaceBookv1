@@ -14,10 +14,7 @@ public class TC_LoginPage_DDT_001 extends BaseClass {
 		LoginPage lp = new LoginPage(driver);
 		
 		lp.SetUserName(usr);
-		lp.SetPassword(pwd
-				);
-
-
+		lp.SetPassword(pwd);
 
 		lp.LoginButton();
 		System.out.println("Succesfully Logged In");

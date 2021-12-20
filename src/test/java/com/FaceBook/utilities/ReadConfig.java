@@ -61,4 +61,11 @@ public class ReadConfig {
 
 	}
 	
+	public String getEdgePath() {
+		String FirefoxPath = prop.getProperty("edgepath");
+		return FirefoxPath;
+
+	}
+
+	
 }
