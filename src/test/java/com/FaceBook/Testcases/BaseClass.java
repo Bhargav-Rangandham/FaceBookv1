@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,8 +15,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
 import com.FaceBook.utilities.ReadConfig;
 
 
@@ -68,7 +71,7 @@ public class BaseClass {
 			driver.manage().window().maximize();
 
 		}
-		
+
 		else if(br.equals("edge")) {
 
 			System.setProperty("webdriver.edge.driver", readconfig.getEdgePath());
@@ -81,13 +84,9 @@ public class BaseClass {
 
 	}
 
-		/*@AfterClass
-			public void tearDown() {
 
-			driver.quit();
-			}*/
 
-		/*public boolean IsalertPresent () {
+	/*public boolean IsalertPresent () {
 
 			try {
 
@@ -111,13 +110,19 @@ public class BaseClass {
 	public void takeScreenshot(WebDriver driver, String tname) throws IOException {
 
 		TakesScreenshot ts = ((TakesScreenshot)driver);
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + timestamp()+".png");
-		FileHandler.copy(src, dest);
+		File Evidencesrc = ts.getScreenshotAs(OutputType.FILE);
+		File Evidencedest = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + timestamp()+".png");
+		FileHandler.copy(Evidencesrc, Evidencedest);
 
 	}
 
+
+/*
+	@AfterClass
+	public void tearDown() {
+
+		driver.quit();
+
+	}
+*/
 }
-
-
-

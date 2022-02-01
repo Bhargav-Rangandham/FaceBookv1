@@ -16,7 +16,7 @@ public class LogoutPage {
 		PageFactory.initElements(rDriver, this);
 	}
 	
-	@FindBy(xpath = "//img[@class = 's45kfl79 emlxlaya bkmhp75w spb7xbtv']")
+	@FindBy(xpath = "//div[@aria-label = \"Account\" and @role =\"button\" ]")
 	@CacheLookup
 	WebElement ProfileClick;
 	

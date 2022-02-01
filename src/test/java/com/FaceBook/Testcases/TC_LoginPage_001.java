@@ -27,27 +27,36 @@ public class TC_LoginPage_001 extends BaseClass{
 		
 		takeScreenshot(driver, "LoginTest");
 		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+		/*
+		if(driver.getTitle().equals("Facebook – log in or sign up")) {
+		Assert.assertTrue(true);
+		System.out.println("Test Case Passed");
+		takeScreenshot(driver, "LoginTest");
+		logout.ClickProfile();
+		logout.Logoutbtn();
+
+	}
+	else {
+		Assert.assertTrue(false);
+		System.out.println("Test Case Failed");
+		takeScreenshot(driver,"LoginTest");
 		logout.ClickProfile();
 		logout.Logoutbtn();
 		
-		/*if(driver.getTitle().equals("Facebook – log in or sign up")) {
-			Assert.assertTrue(true);
-			System.out.println("Test Case Passed");
-			takeScreenshot(driver, "LoginTest");
-			logout.ClickProfile();
-			logout.Logoutbtn();
-
-		}
-		else {
-			Assert.assertTrue(false);
-			System.out.println("Test Case Failed");
-			takeScreenshot(driver,"LoginTest");
-			logout.ClickProfile();
-			logout.Logoutbtn();
-			
-		}*/
+	}
+		*/
+		
+		logout.ClickProfile();
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		logout.Logoutbtn();
+		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		
 	}
 
 }

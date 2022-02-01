@@ -32,13 +32,16 @@ public class TC_CreateNewAccount_002 extends BaseClass {
 		
 		createacnt.SetGenderFemale();
 				
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
 		createacnt.btnCreateLink();
 		
 		takeScreenshot(driver, "CreateAccount");
 		
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		
 	
-		driver.close();
+	
 	}
 	
 	

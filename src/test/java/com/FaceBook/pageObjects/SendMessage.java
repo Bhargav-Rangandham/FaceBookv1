@@ -17,16 +17,28 @@ public class SendMessage {
 		
 	}
 
+	@FindBy(xpath = "//input[@type='search']")
+	@CacheLookup
+	WebElement txtSearch;
+	
 	
 	@FindBy(xpath = "//span[text() = 'Bhargav Naidu']")
 	@CacheLookup
 	WebElement txtContacts;
 		
 	
-	@FindBy(xpath = "//div[@class='_1mf _1mj'  and @data-offset-key = 'bhdir-0-0']")   //div[text() = 'Aa']
+	@FindBy(xpath = "//div[@aria-label=\"Message\" and @ role =\"textbox\"]")   //div[text() = 'Aa']
 	@CacheLookup
 	WebElement txtMsg;
 	
+		
+	@FindBy(xpath = "//div[@aria-label=\"Press Enter to send\" and @ role =\"button\"]")
+	@CacheLookup
+	WebElement SendMsg;
+	
+	public void SearchBox(String text) {
+		txtSearch.sendKeys(text);;
+	}
 	
 	
 	public void SelectContacts() {
@@ -36,5 +48,9 @@ public class SendMessage {
 	
 	public void TypeMessage( String Msg) {
 		txtMsg.sendKeys(Msg);
+	}
+	
+	public void SendMsg() {
+		SendMsg.click();
 	}
 }
