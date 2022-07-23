@@ -4,12 +4,13 @@
   <test thread-count="5" name="FaceBookapp(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.FaceBook.Testcases.TC_SendMessage_003">
+      <class name="com.FaceBook.Testcases.TC_LoginPage_DDT_001">
         <methods>
-          <include name="SendMessage"/>
           <include name="SetUp"/>
+          <include name="LoginTestDDT"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.FaceBook.Testcases.TC_SendMessage_003 -->
+      </class> <!-- com.FaceBook.Testcases.TC_LoginPage_DDT_001 -->
     </classes>
   </test> <!-- FaceBookapp(failed) -->
 </suite> <!-- Failed suite [FaceBookV1] -->

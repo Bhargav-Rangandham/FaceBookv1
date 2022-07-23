@@ -14,23 +14,23 @@ public class ExcelUtils {
 	public static FileInputStream fis;
 	public static FileOutputStream fos;
 	public static XSSFWorkbook wb;
-	public static XSSFSheet sheet;
+	public static XSSFSheet ws;
 	public static XSSFRow row;
 	public static XSSFCell cell;
-	String path = null;
+	
+	/*String path = null;
 	
 	public ExcelUtils(String path){
 		this.path = path;
 	}
-	
-	
+	*/
 	
 	public static int getRowCount(String xlFile, String xlsheet) throws IOException {
 		
 		fis = new FileInputStream(xlFile);
 		wb = new XSSFWorkbook(fis);
-		sheet = wb.getSheet(xlsheet);
-		int rowcount = sheet.getLastRowNum();
+		ws = wb.getSheet(xlsheet);
+		int rowcount = ws.getLastRowNum();
 		wb.close();
 		fis.close();
 		return rowcount;
@@ -42,8 +42,8 @@ public class ExcelUtils {
 		
 		fis = new FileInputStream(xlFile);
 		wb = new XSSFWorkbook(fis);
-		sheet = wb.getSheet(xlsheet);
-		row = sheet.getRow(rownum);
+		ws = wb.getSheet(xlsheet);
+		row = ws.getRow(rownum);
 		int cellcount = row.getLastCellNum();
 		wb.close();
 		fis.close();
@@ -55,8 +55,8 @@ public class ExcelUtils {
 		
 		fis = new FileInputStream(xlFile);
 		wb = new XSSFWorkbook(fis);
-		sheet = wb.getSheet(xlsheet);
-		row = sheet.getRow(rownum);
+		ws = wb.getSheet(xlsheet);
+		row = ws.getRow(rownum);
 		cell = row.getCell(column);
 		
 		String data;
@@ -83,8 +83,8 @@ public class ExcelUtils {
 		
 		fis = new FileInputStream(xlFile);
 		wb = new XSSFWorkbook(fis);
-		sheet = wb.getSheet(xlsheet);
-		row = sheet.getRow(rownum);
+		ws = wb.getSheet(xlsheet);
+		row = ws.getRow(rownum);
 		cell = row.getCell(column);
 		cell.setCellValue(data);
 		fos = new FileOutputStream(xlFile);
