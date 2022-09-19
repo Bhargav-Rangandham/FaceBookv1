@@ -7,13 +7,15 @@
 	<test name = "FaceBookapp">
 	<parameter name = "browser" value = "chrome"/>
 	<classes>
-	 		<class name = "com.FaceBook.Testcases.TC_LoginPage_DDT_001"></class>  
-	  	   <!-- <class name = "com.FaceBook.Testcases.TC_LoginPage_001"></class>
-	 
-	 		<class name = "com.FaceBook.Testcases.TC_CreateNewAccount_002"></class>	
-	  
-	  		<class name = "com.FaceBook.Testcases.TC_SendMessage_003"></class> -->
-	
+	 	
+	 	<class name = "com.FaceBook.Testcases.TC_LoginPage_DDT_001"></class> 
+	 	
+	 	<!--
+	 	<class name = "com.FaceBook.Testcases.TC_LoginPage_001"></class>
+	 	<class name = "com.FaceBook.Testcases.TC_CreateNewAccount_002"></class>	 
+	  	<class name = "com.FaceBook.Testcases.TC_SendMessage_003"></class>
+	  	<class name = "com.FaceBook.Testcases.TC_ChangePassword_004"></class>
+		-->
 	</classes>
 	
 	</test>

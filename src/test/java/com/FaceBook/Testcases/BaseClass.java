@@ -1,11 +1,9 @@
-
 package com.FaceBook.Testcases;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +16,6 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
 import com.FaceBook.utilities.ReadConfig;
 
 
@@ -85,21 +82,20 @@ public class BaseClass {
 	}
 
 
+	public boolean IsalertPresent () {
 
-	/*public boolean IsalertPresent () {
+		try {
 
-			try {
+			driver.switchTo().alert();
+			return true;
+		}
+		catch(Exception e){
 
-				driver.switchTo().alert();
-				return true;
-			}
-			catch(Exception e){
+			return false;
 
-				return false;
+		}
 
-			}
-
-		}*/
+	}
 
 	public String timestamp() {
 
@@ -115,7 +111,6 @@ public class BaseClass {
 		FileHandler.copy(Evidencesrc, Evidencedest);
 
 	}
-
 
 	@AfterClass
 	public void tearDown() {

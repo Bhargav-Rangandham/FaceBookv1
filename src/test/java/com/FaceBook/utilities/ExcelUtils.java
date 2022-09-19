@@ -18,13 +18,6 @@ public class ExcelUtils {
 	public static XSSFRow row;
 	public static XSSFCell cell;
 	
-	/*String path = null;
-	
-	public ExcelUtils(String path){
-		this.path = path;
-	}
-	*/
-	
 	public static int getRowCount(String xlFile, String xlsheet) throws IOException {
 		
 		fis = new FileInputStream(xlFile);

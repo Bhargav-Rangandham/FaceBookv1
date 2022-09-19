@@ -5,9 +5,9 @@
     <classes>
       <class name="com.FaceBook.Testcases.TC_LoginPage_DDT_001">
         <methods>
-          <include name="SetUp"/>
           <include name="LoginTestDDT"/>
           <include name="tearDown"/>
+          <include name="SetUp"/>
         </methods>
       </class> <!-- com.FaceBook.Testcases.TC_LoginPage_DDT_001 -->
     </classes>

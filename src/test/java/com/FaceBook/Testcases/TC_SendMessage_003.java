@@ -1,10 +1,9 @@
 package com.FaceBook.Testcases;
 
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 import org.testng.annotations.Test;
 import com.FaceBook.pageObjects.LoginPage;
-import com.FaceBook.pageObjects.LogoutPage;
+import com.FaceBook.pageObjects.ProfileClickPage;
 import com.FaceBook.pageObjects.SendMessage;
 
 public class TC_SendMessage_003 extends BaseClass {
@@ -14,21 +13,21 @@ public class TC_SendMessage_003 extends BaseClass {
 		
 		driver.get(baseurl);
 		
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		LoginPage lp = new LoginPage(driver);
-		LogoutPage lt = new LogoutPage(driver);
+		ProfileClickPage lt = new ProfileClickPage(driver);
 		SendMessage sm = new SendMessage(driver);
 		
 		lp.SetUserName(username);
 		lp.SetPassword(password);
 		lp.LoginButton();
 		
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		sm.SelectContacts();
 		
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		sm.TypeMessage("Hello Bhargav :), This is Auto Generated Message");
 		
@@ -36,15 +35,15 @@ public class TC_SendMessage_003 extends BaseClass {
 		
 		takeScreenshot(driver, "SendMessage");
 		
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		
 		lt.ClickProfile();
 		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		lt.Logoutbtn();
 		
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.close();
 		

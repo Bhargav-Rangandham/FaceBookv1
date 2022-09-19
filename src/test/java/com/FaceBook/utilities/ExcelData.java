@@ -15,7 +15,7 @@ public class ExcelData {
 	
 	
 	try {
-	File src = new File("R:\\WorkSpace\\Automation\\FaceBookv1\\src\\test\\java\\com\\FaceBook\\Testdata\\TestData.xlsx");
+	File src = new File("R:\\WorkSpace\\FaceBookv1\\FaceBookv1\\src\\test\\java\\com\\FaceBook\\Testdata\\TestData.xlsx");
 	
 	FileInputStream fis = new FileInputStream(src);
 	

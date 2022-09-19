@@ -1,22 +1,25 @@
 package com.FaceBook.Testcases;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
+
 import org.testng.annotations.Test;
+
 import com.FaceBook.pageObjects.LoginPage;
-import com.FaceBook.pageObjects.LogoutPage;
+import com.FaceBook.pageObjects.ProfileClickPage;
+
 
 public class TC_LoginPage_001 extends BaseClass{
 
-	@Test(priority = 0)
+	@Test(priority = 0, alwaysRun = false)
 	public void LoginTest() throws Exception {
 
 		driver.get(baseurl);
 		
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		
 		//Logger.info("Page Opened");
 
 		LoginPage login = new LoginPage(driver);
-		LogoutPage logout  = new LogoutPage(driver);
+		ProfileClickPage logout  = new ProfileClickPage(driver);
 
 		login.SetUserName(username);
 		login.SetPassword(password);
@@ -27,7 +30,7 @@ public class TC_LoginPage_001 extends BaseClass{
 		
 		takeScreenshot(driver, "LoginTest");
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		/*
 		if(driver.getTitle().equals("Facebook – log in or sign up")) {
@@ -48,14 +51,14 @@ public class TC_LoginPage_001 extends BaseClass{
 	}
 		*/
 		
+	
 		logout.ClickProfile();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		logout.Logoutbtn();
+		logout.Logoutbtn();	
 		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 	}
 

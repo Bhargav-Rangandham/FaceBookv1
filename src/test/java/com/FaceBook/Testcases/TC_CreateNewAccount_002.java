@@ -10,7 +10,7 @@ public class TC_CreateNewAccount_002 extends BaseClass {
 	@Test
 	public void CreateAccount() throws Exception  {
 		
-				driver.get(createacnturl);
+		driver.get(createacnturl);
 		
 		CreateNewAccount createacnt = new CreateNewAccount(driver);
 		
@@ -37,13 +37,8 @@ public class TC_CreateNewAccount_002 extends BaseClass {
 		createacnt.btnCreateLink();
 		
 		takeScreenshot(driver, "CreateAccount");
-		
-		
-		
 	
 	
 	}
 	
-	
-
 }
